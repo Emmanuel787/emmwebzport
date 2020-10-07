@@ -1,0 +1,69 @@
+//second-section
+.who-am-i-btn{
+  @include defBtn(none, 1px solid #c4c1c1, 1em 2em);
+  @include typo(.8em, #c4c1c1, 300);
+  margin-top: 1.5em;
+  transition: background .3s ease-in-out !important;
+  &:hover{
+    cursor: pointer;
+    background: #32342e;
+    color: $white;
+    border: 1px solid #32342e;
+  }
+  @include responsive(tab-port){
+    @include typo(.8em, #32342e, 300);
+  }
+  @include responsive(phone){
+    width: 90%;
+    margin-bottom: 2em;
+  }
+}
+//pr1
+.plb-btn{
+  @include daBtn(none, 1px solid $white, 1em 2em);
+  @include typo(.9em, $white, 300);
+  transition: all .3s ease-in-out;
+  font-family: $neuro;
+  &:hover{
+    @include daBtn($white, 1px solid $white, 1em 2em);
+    cursor: pointer;
+    @include typo(.9em, $tertiary-color, 300);
+  }
+}
+//pr2
+.ptb-btn{
+  @include daBtn(none, 1px solid $white, 1em 2em);
+  @include typo(.9em, $white, 300);
+  transition: all .3s ease-in-out;
+  font-family: $neuro;
+  &:hover{
+    @include daBtn($white, 1px solid $white, 1em 2em);
+    cursor: pointer;
+    @include typo(.9em, #1f1f1f, 300);
+  }
+}
+//pr3
+.p-th-b-btn{
+  @include daBtn(none, 1px solid $white, 1em 2em);
+  @include typo(.9em, $white, 300);
+  transition: all .3s ease-in-out;
+  font-family: $neuro;
+  &:hover{
+    @include daBtn($white, 1px solid $white, 1em 2em);
+    cursor: pointer;
+    @include typo(.9em, #1f1f1f, 300);
+  }
+}
+//pr4
+.pfb-btn{
+  @include daBtn(none, 1px solid $white, 1em 2em);
+  @include typo(.9em, $white, 300);
+  transition: all .3s ease-in-out;
+  font-family: $neuro;
+
+  &:hover{
+    @include daBtn($white, 1px solid $white, 1em 2em);
+    cursor: pointer;
+    @include typo(.9em, #1f1f1f, 300);
+  }
+}

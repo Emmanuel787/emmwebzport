@@ -1,0 +1,47 @@
+//hero-section
+.a-hero-section{
+  background: url(/resources/img/hero/about.jpg) no-repeat center center;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  background-position-y: .5em;
+  margin-left: 5%;
+  margin-top: 5em;
+  min-height: 45em;
+  display: flex;
+  width: 0%;
+  @include responsive(tab-land){
+    background-position-y: 0;
+  }
+  @include responsive(phone){
+    background: url(/resources/img/hero/about-mb.jpg) no-repeat center center;
+    background-size: cover;
+    height: 37em;
+  }
+}
+
+.ahs-anim{
+    animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -moz-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -webkit-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          -o-animation: go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+
+    @keyframes go-left {
+      0% {
+        left: 0;
+        width: 0%;
+      }
+      50% {
+        left: 0;
+        width: 90%;
+        margin-left: 8%;
+      }
+      100% {
+        left: 0;
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+  }
+
