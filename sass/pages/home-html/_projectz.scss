@@ -285,39 +285,7 @@
   }
 }
 
-//project-one:start
-.plb-anim{
-  animation: plbAnim 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    -moz-animation: plbAnim 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-      -webkit-animation: plbAnim 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        -o-animation: plbAnim 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-
-  @keyframes plbAnim {
-    0%{
-      background: none;
-    }
-    100%{
-      background: $tertiary-color;
-    }
-  }
-}
-.plb-anim-reverse{
-  animation: plbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    -moz-animation: plbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-      -webkit-animation: plbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        -o-animation: plbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  // animation-delay: 4s;
-
-  @keyframes plbAnimReverse {
-    0%{
-      background: $tertiary-color;
-    }
-    100%{
-      background: none;
-    }
-  }
-}
-
+//
 .prb-anim{
   animation: prbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     -moz-animation: prbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
