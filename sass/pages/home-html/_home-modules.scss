@@ -36,7 +36,7 @@
     width: 0;
     background: url(/resources/img/test-left-bg.png) no-repeat center center;
     background-size: cover;
-    margin-left: 2em;
+    margin-left: 1em;
     min-height: 44em;
     position: relative;
     @include responsive(tab-land){
@@ -82,7 +82,7 @@
       padding: 4em;
       min-width: 25em;
       min-height: 25em;
-      text-align: center;
+      text-align: left;
       display: flex;
       align-items: center;
       justify-content: center;

@@ -22,7 +22,7 @@
       position: relative;
       z-index: 10;
       padding: 1em;
-      background: #202124;
+      background: $darko;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -97,7 +97,7 @@
       @include stack();
       min-height: 20em;
       padding: 1em;
-      background: #202124;
+      background: $darko;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -129,7 +129,7 @@
       @include stack();
       min-height: 20em;
       padding: 1em;
-      background: #202124;
+      background: $darko;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -200,13 +200,13 @@
     min-height: 30em;
     padding: 2em;
     overflow: hidden;
-    background: #202124;
+    background: $darko;
 
     @include responsive(tab-port){
       @include stack();
       min-height: 20em;
       padding: 1em;
-      background: #202124;
+      background: $darko;
       overflow: hidden;
       display: flex;
       align-items: center;
