@@ -115,7 +115,6 @@ if (isBreakPoint(768)) {
 }
 if (isBreakPoint(480)) {
   $('.ehs-right-box').removeClass('erb').addClass('rellax');
-  // rellax.destroy();
 }
 /*
 Jquery breakpoints:end
@@ -191,46 +190,46 @@ $(".emh-mobile-menu-btn-reverse, .page-reverse, .home-reverse").on("click", func
 
 //projectz animations
 
-// // p1
-// $('.pob-left-box').on('mouseenter', function(){
-//   $('.pob-right-box').addClass('prb-anim');
-//   $('.pob-right-box').removeClass('prb-anim-reverse');
-// });
+// p1
+$('.pob-left-box').on('mouseenter', function(){
+  $('.pob-right-box').addClass('prb-anim');
+  $('.pob-right-box').removeClass('prb-anim-reverse');
+});
 
-// $('.pob-left-box').on('mouseleave', function(){
-//   $('.pob-right-box').addClass('prb-anim-reverse');
-//   $('.pob-right-box').removeClass('prb-anim');
-// });
+$('.pob-left-box').on('mouseleave', function(){
+  $('.pob-right-box').addClass('prb-anim-reverse');
+  $('.pob-right-box').removeClass('prb-anim');
+});
 
-// //p2
-// $('.ptb-right-box').on('mouseenter', function () {
-//   $('.ptb-left-box').addClass('ptb-anim-2');
-//   $('.ptb-left-box').removeClass('ptb-anim-reverse-2');
-// });
+//p2
+$('.ptb-right-box').on('mouseenter', function () {
+  $('.ptb-left-box').addClass('ptb-anim-2');
+  $('.ptb-left-box').removeClass('ptb-anim-reverse-2');
+});
 
-// $('.ptb-right-box').on('mouseleave', function () {
-//   $('.ptb-left-box').addClass('ptb-anim-reverse-2');
-//   $('.ptb-left-box').removeClass('ptb-anim-2');
-// });
+$('.ptb-right-box').on('mouseleave', function () {
+  $('.ptb-left-box').addClass('ptb-anim-reverse-2');
+  $('.ptb-left-box').removeClass('ptb-anim-2');
+});
 
-// //p3
-// $('.p-th-b-left-box').on('mouseenter', function () {
-//   $('.p-th-b-right-box').addClass('pthb-anim-3');
-//   $('.p-th-b-right-box').removeClass('pthb-anim-reverse-3');
-// });
+//p3
+$('.p-th-b-left-box').on('mouseenter', function () {
+  $('.p-th-b-right-box').addClass('pthb-anim-3');
+  $('.p-th-b-right-box').removeClass('pthb-anim-reverse-3');
+});
 
-// $('.p-th-b-left-box').on('mouseleave', function () {
-//   $('.p-th-b-right-box').addClass('pthb-anim-reverse-3');
-//   $('.p-th-b-right-box').removeClass('pthb-anim-3');
-// });
+$('.p-th-b-left-box').on('mouseleave', function () {
+  $('.p-th-b-right-box').addClass('pthb-anim-reverse-3');
+  $('.p-th-b-right-box').removeClass('pthb-anim-3');
+});
 
-// //p4
-// $('.pfb-right-box').on('mouseenter', function () {
-//   $('.pfb-left-box').addClass('pfb-anim-4');
-//   $('.pfb-left-box').removeClass('pfb-anim-reverse-4');
-// });
+//p4
+$('.pfb-right-box').on('mouseenter', function () {
+  $('.pfb-left-box').addClass('pfb-anim-4');
+  $('.pfb-left-box').removeClass('pfb-anim-reverse-4');
+});
 
-// $('.pfb-right-box').on('mouseleave', function () {
-//   $('.pfb-left-box').addClass('pfb-anim-reverse-4');
-//   $('.pfb-left-box').removeClass('pfb-anim-4');
-// });
+$('.pfb-right-box').on('mouseleave', function () {
+  $('.pfb-left-box').addClass('pfb-anim-reverse-4');
+  $('.pfb-left-box').removeClass('pfb-anim-4');
+});

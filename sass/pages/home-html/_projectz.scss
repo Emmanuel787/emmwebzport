@@ -349,40 +349,6 @@
   }
 }
 
-//project-three:start
-// .pthb-anim-3{
-//   animation: pthbAnim3 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//     -moz-animation: pthbAnim3 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//       -webkit-animation: pthbAnim3 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//         -o-animation: pthbAnim3 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//   // animation-delay: 4s;
-
-//   @keyframes pthbAnim3 {
-//     0%{
-//       background: none;
-//     }
-//     100%{
-//       background: #283f47;
-//     }
-//   }
-// }
-// .pthb-anim-reverse-3{
-//   animation: pthbAnimReverse3 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//     -moz-animation: pthbAnimReverse3 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//       -webkit-animation: pthbAnimReverse3 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//         -o-animation: pthbAnimReverse3 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//   // animation-delay: 4s;
-
-//   @keyframes pthbAnimReverse3 {
-//     0%{
-//       background: #283f47;
-//     }
-//     100%{
-//       background: none;
-//     }
-//   }
-// }
-
 .pthb-anim-3{
   animation: pthbAnim3 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     -moz-animation: pthbAnim3 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -446,36 +412,3 @@
   }
 }
 
-// .pfb-anim-4{
-//   animation: pfbAnim4 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//     -moz-animation: pfbAnim4 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//       -webkit-animation: pfbAnim4 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//         -o-animation: pfbAnim4 0s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//   // animation-delay: 4s;
-
-//   @keyframes pfbAnim4 {
-//     0%{
-//       background: none;
-//     }
-//     100%{
-//       background: #2c2627;
-//     }
-//   }
-// }
-// .pfb-anim-reverse-4{
-//   animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//     -moz-animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//       -webkit-animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//         -o-animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-//   // animation-delay: 4s;
-
-//   @keyframes pfbAnimReverse4 {
-//     0%{
-//       background: #d94f60;
-//     }
-//     100%{
-//       background: none;
-//     }
-//   }
-// }
-//project-four:end
