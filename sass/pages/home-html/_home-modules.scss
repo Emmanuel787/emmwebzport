@@ -195,5 +195,39 @@
   }
 }
 
+//who-we-are
+.wwas-left-box{
+  width: 0;
+  position: relative;
+  left: 0;
+  min-height: 45em;
+  background: $tertiary-color;
+}
+
+.wwas-anim{
+  animation: wwasAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: wwasAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: wwasAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: wwasAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+
+  @keyframes wwasAnim {
+    0%{
+      width: 0;
+      left: 0;
+    }
+    50%{
+      width: 0;
+      left: 0;
+    }
+    100%{
+      width: 50%;
+      left: 100;
+    }
+  }
+}
+
+.wwas-right-box{
+  @include span(1/2, $cycle:2);
+}
 
 

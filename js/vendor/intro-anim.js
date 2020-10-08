@@ -2,7 +2,7 @@ $(window).on('load', function () {
   const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
 
 
-  $('.ehs-anim-box').delay(500).addClass('ehs-anim');
+  // $('.ehs-anim-box').delay(500).addClass('ehs-anim');
 
   $('.svg-dark').delay(500).fadeOut();
 

@@ -18,15 +18,19 @@
 //who-we-are
 .who-we-are-section{
   @include col(4/4); margin-right: 0;
-  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 97%);
-  height: 45em;
-  background: $white;
+  clip-path: polygon(0 3%, 100% 0, 100% 100%, 0 97%);
+  position: relative;
+  z-index: 9;
+  background: #181a1c;
 }
 
 //portfolio-section
 .portfolio-section{
   @include col(4/4); margin-right: 0;
-  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 97%);
+  // clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 97%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+
+
   padding: 10em 0 7em 0;
   background: $darko;
   overflow: hidden;
