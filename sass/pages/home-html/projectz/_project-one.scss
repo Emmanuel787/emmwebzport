@@ -1,0 +1,103 @@
+
+.project-one-box{
+  @include col(4/4); margin-right: 0;
+  margin-bottom: 7em;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  background: $darko;
+  @include responsive(tab-port){
+    margin-bottom: 2em;
+  }
+
+  .pob-left-box{
+    @include span(1/3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30em;
+    padding: 2em;
+
+    @include responsive(tab-port){
+      @include stack();
+      min-height: 20em;
+      position: relative;
+      z-index: 10;
+      padding: 1em;
+      background: $darko;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .pob-ct-box{
+    @include span(2/3); margin-right: 0;
+    overflow: hidden;
+    @include responsive(tab-port){
+      @include stack();
+    }
+    .pob-right-box{
+      @include col(4/4); margin-right: 0;
+      background: url(/resources/img/hero/about.jpg) no-repeat center center;
+      background-size: cover;
+      min-height: 30em;
+      position: relative;
+      overflow: hidden;
+      z-index: -1;
+      @include responsive(tab-port){
+        min-height: 30em;
+      }
+      @include responsive(phone){
+        min-height: 20em;
+      }
+    }
+  }
+}
+// animations
+.prb-anim{
+  animation: prbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: prbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: prbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: prbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: .2s;
+  @keyframes prbAnim {
+    0%{
+      background-size: 100%;
+    }
+    100%{
+      background-size: 110%;
+    }
+  }
+}
+.prb-anim-reverse{
+  animation: prbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: prbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: prbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: prbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  @keyframes prbAnimReverse {
+    0%{
+      background-size: 110%;
+    }
+    100%{
+      background-size: 100%;
+    }
+  }
+}
+//typo
+.plb-title{
+  @include typo(2em, $white, 700);
+  font-family: $lust-1;
+  margin-bottom: .5em;
+  @include responsive(phone){
+    @include typo(1.5em, $white, 700);
+  }
+}
+
+.plb-txt{
+  @include typo(.9em,$white, 300);
+  margin-bottom: 2em;
+  @include responsive(phone){
+    @include typo(.8em,$white, 300);
+  }
+}

@@ -1,0 +1,105 @@
+
+.project-four-box{
+  @include col(4/4); margin-right: 0;
+  margin-bottom: 7em;
+  overflow: hidden;
+  position: relative;
+  background: $darko;
+  z-index: 10;
+
+  @include responsive(tab-port){
+    margin-bottom: 2em;
+  }
+
+  .pfour-ct-box{
+    @include span(2/3);
+    overflow: hidden;
+    @include responsive(tab-port){
+      @include stack();
+    }
+    .pfb-left-box{
+      @include col(4/4); margin-right: 0;
+      background: url(/resources/img/projectz/p4.jpg) no-repeat center center;
+      background-size: cover;
+      min-height: 30em;
+      position: relative;
+      z-index: -1;
+      @include responsive(tab-port){
+        min-height: 30em;
+      }
+      @include responsive(phone){
+        min-height: 20em;
+      }
+    }
+  }
+
+  .pfb-right-box{
+    @include span(1/3); margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30em;
+    padding: 2em;
+    overflow: hidden;
+    background: $darko;
+
+    @include responsive(tab-port){
+      @include stack();
+      min-height: 20em;
+      padding: 1em;
+      background: $darko;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+// animations
+.pfb-anim-4{
+  animation: pfbAnim4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: pfbAnim4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: pfbAnim4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: pfbAnim4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: .2s;
+  @keyframes pfbAnim4 {
+    0%{
+      background-size: 100%;
+    }
+    100%{
+      background-size: 110%;
+    }
+  }
+}
+
+.pfb-anim-reverse-4{
+  animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: pfbAnimReverse4 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  @keyframes pfbAnimReverse4 {
+    0%{
+      background-size: 110%;
+    }
+    100%{
+      background-size: 100%;
+    }
+  }
+}
+//typo
+.pfb-title{
+  @include typo(2em, $white, 700);
+  font-family: $lust-1;
+  margin-bottom: .5em;
+  @include responsive(phone){
+    @include typo(1.5em, $white, 700);
+  }
+}
+
+.pfb-txt{
+  @include typo(.9em,$white, 300);
+  margin-bottom: 2em;
+  @include responsive(phone){
+    @include typo(.8em,$white, 300);
+  }
+}

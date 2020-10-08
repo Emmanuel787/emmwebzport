@@ -35,18 +35,18 @@
     transform: rotate(90deg);
   }
 }
+
 //header
 .el-brand{
   @include typo(2em, $white, 700);
   font-family: $neuro;
 }
+
 //first-section
 .efs-txt{
   @include typo(3em, $white, 400);
   font-family: $neuro;
 }
-
-
 
 //random-text-code
 .color-change{

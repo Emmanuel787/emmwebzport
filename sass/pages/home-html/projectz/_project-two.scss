@@ -1,0 +1,102 @@
+
+.project-two-box{
+  @include col(4/4); margin-right: 0;
+  margin-bottom: 7em;
+  overflow: hidden;
+  position: relative;
+  background: $darko;
+  z-index: 10;
+  @include responsive(tab-port){
+    margin-bottom: 2em;
+  }
+
+  .ptwo-ct-box{
+    @include span(2/3);
+    overflow: hidden;
+    @include responsive(tab-port){
+      @include stack();
+    }
+    .ptb-left-box{
+      @include col(4/4);
+      background: url(/resources/img/projectz/p2.jpg) no-repeat center center;
+      background-size: cover;
+      min-height: 30em;
+      position: relative;
+      z-index: -1;
+      @include responsive(tab-port){
+        min-height: 30em;
+      }
+      @include responsive(phone){
+        min-height: 20em;
+      }
+    }
+  }
+
+  .ptb-right-box{
+    @include span(1/3);
+    display: flex;
+    align-items: center;
+    min-height: 30em;
+    position: relative;
+    z-index: 10;
+    padding: 2em;
+    @include responsive(tab-port){
+      @include stack();
+      min-height: 20em;
+      padding: 1em;
+      background: $darko;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+// animations
+.ptb-anim-2{
+  animation: ptbAnim2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: ptbAnim2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: ptbAnim2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: ptbAnim2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: .2s;
+  @keyframes ptbAnim2 {
+    0%{
+      background-size: 100%;
+    }
+    100%{
+      background-size: 110%;
+    }
+  }
+}
+
+.ptb-anim-reverse-2{
+  animation: ptbAnimReverse2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: ptbAnimReverse2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: ptbAnimReverse2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: ptbAnimReverse2 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  @keyframes ptbAnimReverse2 {
+    0%{
+      background-size: 110%;
+    }
+    100%{
+      background-size: 100%;
+    }
+  }
+}
+//typo
+.ptb-title{
+  @include typo(2em, $white, 700);
+  font-family: $lust-1;
+  margin-bottom: .5em;
+  @include responsive(phone){
+    @include typo(1.5em, $white, 700);
+  }
+}
+
+.ptb-txt{
+  @include typo(.9em,$white, 300);
+  margin-bottom: 2em;
+  @include responsive(phone){
+    @include typo(.8em,$white, 300);
+  }
+}
