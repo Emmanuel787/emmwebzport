@@ -10,7 +10,7 @@ function onScrollAnim() {
 
   if (docScroll > heroSection) {
     $('.el-main-header').css({
-      "background":"#1f1f1fdb"
+      "background":"#1d1f23d6"
     });
   } else{
     $('.el-main-header').css({
@@ -19,7 +19,7 @@ function onScrollAnim() {
   }
   if (docScroll > heroSection) {
     $('.el-main-header').css({
-      "background":"#1f1f1fdb"
+      "background":"#1d1f23d6"
     });
   } else{
     $('.el-main-header').css({
