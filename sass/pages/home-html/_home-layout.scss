@@ -28,8 +28,8 @@
   @include col(4/4); margin-right: 0;
   clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 97%);
   padding: 10em 0 7em 0;
-  // background: $darko;
-  background: $white;
+  background: $darko;
+  // background: $white;
   overflow: hidden;
   position: relative;
   z-index: 10;
