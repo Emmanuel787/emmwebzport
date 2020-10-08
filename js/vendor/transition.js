@@ -83,9 +83,9 @@ $(document).ready(function () {
 
             //divide////////////////////////////////////////////////////////////////////
 
-            $('.el-hero-section').addClass('ehs-bg-anim');
+            // $('.el-hero-section').addClass('ehs-bg-anim');
 
-            $('.ehs-anim-box').addClass('ehs-anim');
+            // $('.ehs-anim-box').addClass('ehs-anim');
 
             $('.svg-dark').delay(500).fadeOut();
 
@@ -185,9 +185,6 @@ $(document).ready(function () {
             });
 
             //divide////////////////////////////////////////////////////////////////////
-            $('.el-divider').addClass('ed-reinit-barba');
-
-            $('.el-main-footer').addClass('ef-reinit-barba');
 
             //divide/////////////////////////////////////////////////////////////////
 
