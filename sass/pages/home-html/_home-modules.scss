@@ -224,6 +224,16 @@
       left: 100;
     }
   }
+  @include responsive(phone){
+    @keyframes wwasAnim {
+      100%{
+        @include stack();
+        left: 0;
+        width: 100%;
+        min-height: 30em;
+      }
+    }
+  }
 }
 
 .wwas-right-box{
@@ -236,6 +246,11 @@
   align-items: center;
   justify-content: center;
   padding: 7em;
+  @include responsive(phone){
+    @include stack();
+    min-height: 20em;
+    padding: 2em 1em;
+  }
   .inner-wrb-anim-box{
     width: 0;
     position: absolute;
@@ -264,6 +279,14 @@
     100%{
       width: 0;
       left: 100%;
+    }
+  }
+  @include responsive(phone){
+    @keyframes wwasAnim {
+      100%{
+        width: 100%;
+        left: 0;
+      }
     }
   }
 }
