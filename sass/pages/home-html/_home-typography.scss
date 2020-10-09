@@ -75,8 +75,34 @@
   font-family: $neuro;
 }
 
-//portfolio-section
+//who-we-are
+.wrb-title{
+  @include typo(2em, $white, 600);
+  // font-family: $neuro;
+  // margin-bottom: .5em;
+  font-family: $lust;
+}
 
+.wrb-txt{
+  @include typo(.9em, $white, 300);
+}
+
+.wrb-btn{
+  @include typo(.9em, $white, 300);
+  padding: .5em 2em;
+  border: 1px solid $white;
+  font-family: $neuro;
+  margin-top: 1em;
+  transition: background .3s ease-in-out;
+  transition: color .3s ease-in-out;
+  &:hover{
+    background: $white;
+    color: #1f1f1f;
+    cursor: pointer;
+  }
+}
+
+//portfolio-section
 .p1-title{
   @include typo(3em, $white, 600);
   margin-top: -4em;

@@ -220,7 +220,7 @@
       left: 0;
     }
     100%{
-      width: 50%;
+      @include span(1/2, $cycle: 2);
       left: 100;
     }
   }
@@ -228,6 +228,43 @@
 
 .wwas-right-box{
   @include span(1/2, $cycle:2);
+  position: relative;
+  left: 0;
+  min-height: 45em;
+  background: $darko;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7em;
+  .inner-wrb-anim-box{
+    width: 0;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $darko + 5;
+  }
 }
-
+.iwrb-anim{
+  animation: iwrbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    -moz-animation: iwrbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -webkit-animation: iwrbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -o-animation: iwrbAnim 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1.6s;
+  @keyframes iwrbAnim {
+    0%{
+      width: 0;
+      left: 0;
+    }
+    50%{
+      @include col(4/4); margin-right: 0;
+      left: 0;
+    }
+    100%{
+      width: 0;
+      left: 100%;
+    }
+  }
+}
 

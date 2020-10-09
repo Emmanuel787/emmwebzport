@@ -1,5 +1,5 @@
 // var tl = new TimelineLite();
-
+const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
 
 function onScrollAnim() {
 
@@ -32,6 +32,8 @@ function onScrollAnim() {
 
   if (docScroll > heroSectionF) {
     $('.wwas-left-box').addClass('wwas-anim');
+    $('.inner-wrb-anim-box').addClass('iwrb-anim');
+    tl.to('.wrb-title, .wrb-txt, .wrb-btn', { y: '0%', duration: 1, delay: 3.2, stagger: 0.15 });
   }
 
 }
