@@ -1,5 +1,4 @@
 // var tl = new TimelineLite();
-const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
 
 function onScrollAnim() {
 
