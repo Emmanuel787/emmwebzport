@@ -133,17 +133,17 @@ Jquery breakpoints:end
 /*
 on scroll do this:start
 */
-// $(function () {
-//   var backToTop = $(".emf-bottom-box");
-//   $(window).scroll(function () {
-//     var scroll = $(window).scrollTop();
-//     if (scroll >= 3500) {
-//       backToTop.fadeIn();
-//     } else {
-//       backToTop.fadeOut();
-//     }
-//   });
-// });
+$(function () {
+  var backToTop = $(".arrow-up-box");
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 3500) {
+      backToTop.fadeIn();
+    } else {
+      backToTop.fadeOut();
+    }
+  });
+});
 /*
 ons scroll do this:end
 */
