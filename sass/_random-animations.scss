@@ -114,6 +114,9 @@
   @include responsive(tab-port){
     border: 2px solid $white;
   }
+  @include responsive(phone){
+    display: none;
+  }
 }
 .scroller {
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
