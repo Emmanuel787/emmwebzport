@@ -49,7 +49,7 @@
     margin-left: 0;
   }
   @include responsive(phone){
-    @include typo(2em, $white, 100);
+    @include typo(2.5em, $white, 100);
   }
   span{
     transform: translateY(100%);
