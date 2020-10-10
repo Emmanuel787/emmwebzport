@@ -5,9 +5,14 @@
   background-size: cover;
   z-index: -1;
   overflow: hidden;
+  min-height: 45em;
 
   @include responsive(tab-land){
     background: url(/resources/img/hero/12-tab.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  @include responsive(tab-port){
+    background: url(/resources/img/hero/12-3-3-b.jpg) no-repeat center center;
     background-size: cover;
   }
 

@@ -1,3 +1,5 @@
+const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
 $(window).scrollTop(0);
 
 $(function () {
@@ -173,7 +175,6 @@ if !E=doThisHere():end
 
 ////////////////////////////////////////////////@2020
 
-const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 $(".emh-mobile-menu-btn").on("click", function () {
   $("body").addClass("mobile-menu-body-anim");

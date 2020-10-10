@@ -47,6 +47,8 @@
       width: 0;
     }
     @include responsive(phone){
+      background: url(/resources/img/test-left-bg-mb.png) no-repeat center center;
+      background-size: cover;
       margin-left: 2em;
       margin-top: -3em;
       min-height: 42em;
@@ -152,9 +154,9 @@
     @include responsive(phone){
       visibility: visible;
       transform: rotate(45deg);
-      background: #7fffd404;
+      background: #39acd20a;
       padding: 1em;
-      width: 100%;
+      width: 130%;
       top: 80%;
       bottom: 0em;
       left: 0;
@@ -228,13 +230,6 @@
   @include responsive(phone){
     @keyframes wwasAnim {
       100%{
-        @include stack();
-        left: 0;
-        width: 0;
-        min-height: 30em;
-      }
-      100%{
-        @include stack();
         left: 0;
         width: 100%;
         min-height: 30em;
@@ -253,11 +248,14 @@
   align-items: center;
   justify-content: center;
   padding: 7em;
+  @include responsive(tab-port){
+    padding: 4em;
+  }
   @include responsive(phone){
     @include stack();
+    padding: 4em;
     min-height: 20em;
-    padding: 2em 1em;
-    background: $tertiary-color;
+    padding: 3.7em 1em 1em 1em;
   }
   .inner-wrb-anim-box{
     width: 0;

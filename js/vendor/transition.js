@@ -83,10 +83,6 @@ $(document).ready(function () {
 
             //divide////////////////////////////////////////////////////////////////////
 
-            // $('.el-hero-section').addClass('ehs-bg-anim');
-
-            // $('.ehs-anim-box').addClass('ehs-anim');
-
             $('.svg-dark').delay(500).fadeOut();
 
 
@@ -158,44 +154,44 @@ $(document).ready(function () {
 
             //divide////////////////////////////////////////////////////////////////////
 
-            function onScrollAnim() {
+              function onScrollAnim() {
 
-  var docScroll = $(document).scrollTop(),
+              var docScroll = $(document).scrollTop(),
 
-  heroSection = $(".el-hero-section").offset().top + 250;
+              heroSection = $(".el-hero-section").offset().top + 250;
 
-  heroSectionF = $(".el-hero-section").offset().top + 5;
+              heroSectionF = $(".el-hero-section").offset().top + 5;
 
 
-  if (docScroll > heroSection) {
-    $('.el-main-header').css({
-      "background":"#1d1f23d6"
-    });
-  } else{
-    $('.el-main-header').css({
-      "background": ""
-    });
-  }
+              if (docScroll > heroSection) {
+                $('.el-main-header').css({
+                  "background":"#1d1f23d6"
+                });
+              } else{
+                $('.el-main-header').css({
+                  "background": ""
+                });
+              }
 
-  if (docScroll > heroSection) {
-    $('.el-main-header').css({
-      "background":"#1d1f23d6"
-    });
-  } else{
-    $('.el-main-header').css({
-      "background": ""
-    });
-  }
+              if (docScroll > heroSection) {
+                $('.el-main-header').css({
+                  "background":"#1d1f23d6"
+                });
+              } else{
+                $('.el-main-header').css({
+                  "background": ""
+                });
+              }
 
-  if (docScroll > heroSectionF) {
-    $('.wwas-left-box').addClass('wwas-anim');
-    $('.inner-wrb-anim-box').addClass('iwrb-anim');
-    tl.to('.wrb-title, .wrb-txt, .wrb-btn', { y: '0%', duration: 1, delay: 3.2, stagger: 0.15 });
-  }
+              if (docScroll > heroSectionF) {
+                $('.wwas-left-box').addClass('wwas-anim');
+                $('.inner-wrb-anim-box').addClass('iwrb-anim');
+                tl.to('.wrb-title, .wrb-txt, .wrb-btn', { y: '0%', duration: 1, delay: 3.2, stagger: 0.15 });
+              }
 
-}
+            }
 
-window.addEventListener("scroll", onScrollAnim);
+            window.addEventListener("scroll", onScrollAnim);
 
 
             tl.to('.dsb-txt-appear', { y: '0%', duration: 0.7, delay: 3, stagger: 0.10 }, "-=1");
