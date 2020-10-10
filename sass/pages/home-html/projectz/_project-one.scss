@@ -69,6 +69,16 @@
       background-size: 110%;
     }
   }
+  @include responsive(phone){
+    @keyframes prbAnim {
+      0%{
+        background-size: 100%;
+      }
+      100%{
+        background-size: 100%;
+      }
+    }
+  }
 }
 .prb-anim-reverse{
   animation: prbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
@@ -77,10 +87,20 @@
         -o-animation: prbAnimReverse 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   @keyframes prbAnimReverse {
     0%{
-      background-size: 110%;
+      background-size: 115%;
     }
     100%{
-      background-size: 100%;
+      background-size: 110%;
+    }
+  }
+  @include responsive(phone){
+    @keyframes prbAnim {
+      0%{
+        width: 100%;
+      }
+      100%{
+        width: 100%;
+      }
     }
   }
 }

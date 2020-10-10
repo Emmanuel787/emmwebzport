@@ -96,8 +96,7 @@
   transition: background .3s ease-in-out;
   transition: color .3s ease-in-out;
   &:hover{
-    // background: $white;
-    color: #1f1f1f;
+    color: $white;
     cursor: pointer;
   }
 }
