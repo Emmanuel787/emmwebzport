@@ -220,8 +220,6 @@ $(document).ready(function () {
               $(".hidden-mobile-menu").removeClass("mobile-menu-anim");
             });
 
-            //divide////////////////////////////////////////////////////////////////////
-
             //divide/////////////////////////////////////////////////////////////////
 
             //projectz animations
@@ -267,6 +265,20 @@ $(document).ready(function () {
             $('.pfb-right-box').on('mouseleave', function () {
               $('.pfb-left-box').addClass('pfb-anim-reverse-4');
               $('.pfb-left-box').removeClass('pfb-anim-4');
+            });
+
+            //divide/////////////////////////////////////////////////////////////////
+
+            $(function () {
+              var backToTop = $(".arrow-up-box");
+              $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 3500) {
+                  backToTop.fadeIn();
+                } else {
+                  backToTop.fadeOut();
+                }
+              });
             });
 
           },
