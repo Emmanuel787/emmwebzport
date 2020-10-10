@@ -67,6 +67,16 @@
       background-size: 110%;
     }
   }
+  @include responsive(phone){
+    @keyframes ptbAnim2 {
+      0%{
+        background-size: 100%;
+      }
+      100%{
+        background-size: 100%;
+      }
+    }
+  }
 }
 
 .ptb-anim-reverse-2{
@@ -80,6 +90,16 @@
     }
     100%{
       background-size: 100%;
+    }
+  }
+  @include responsive(phone){
+    @keyframes ptbAnimReverse2 {
+      0%{
+        background-size: 100%;
+      }
+      100%{
+        background-size: 100%;
+      }
     }
   }
 }
