@@ -198,18 +198,21 @@
 }
 
 //who-we-are
-.wrb-ct-box{
-  background: #1c1e21;
-  padding: 2em;
-}
+// .wrb-ct-box{
+//   background: #1c1e21;
+//   padding: 2em;
+// }
 
 .wwas-left-box{
   @include span(1/2, $cycle: 2);
-  // position: relative;
-  // left: 0;
+  position: relative;
+  left: 0;
   min-height: 45em;
   background: url(/resources/img/11.jpg) no-repeat center center;
   background-size: cover;
+  @include responsive(phone){
+    @include col(4/4); margin-right: 0;
+  }
 }
 
 .wwas-right-box{
@@ -228,7 +231,7 @@
   @include responsive(phone){
     @include stack();
     padding: 4em;
-    min-height: 20em;
+    min-height: 26em;
     padding: 3.7em 1em 1em 1em;
   }
   .inner-wrb-anim-box{
