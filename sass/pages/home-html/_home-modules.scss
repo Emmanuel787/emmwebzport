@@ -198,6 +198,11 @@
 }
 
 //who-we-are
+.wrb-ct-box{
+  background: #1c1e21;
+  padding: 2em;
+}
+
 .wwas-left-box{
   @include span(1/2, $cycle: 2);
   // position: relative;
