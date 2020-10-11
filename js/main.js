@@ -2,14 +2,15 @@ const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 $(window).scrollTop(0);
 
-$(function () {
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 1) {
-      rellax.refresh();
-    }
-  });
-});
+// $(function () {
+//   $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     if (scroll >= 1) {
+//       rellax.refresh();
+//     }
+//   });
+// });
+
 //startup loader:start
 // $(window).on('load', function () {
 
