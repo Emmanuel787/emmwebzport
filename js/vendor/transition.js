@@ -281,13 +281,19 @@ $(document).ready(function () {
               });
             });
 
+            //divide/////////////////////////////////////////////////////////////////
+
+            //transition-fx
+            $('.graphicz-home, .home-graphicz, .home-video-editz, .home-photo-editz, .home-audio-editz').on('click', function () {
+              $('.el-main-header').fadeOut(500);
+              $('.transition-fx').fadeIn(500);
+            });
+
+
+
           },
-
-
           async once(data) {
             contentAnimation();
-
-
           },
         },
       ],

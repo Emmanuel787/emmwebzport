@@ -243,3 +243,9 @@ $('.pfb-right-box').on('mouseleave', function () {
   $('.pfb-left-box').addClass('pfb-anim-reverse-4');
   $('.pfb-left-box').removeClass('pfb-anim-4');
 });
+
+//transition-fx
+$('.graphicz-home, .home-graphicz, .home-video-editz, .home-photo-editz, .home-audio-editz').on('click', function () {
+  $('.el-main-header').fadeOut(500);
+  $('.transition-fx').fadeIn(500);
+});

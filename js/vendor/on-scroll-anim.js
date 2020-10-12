@@ -29,10 +29,9 @@ function onScrollAnim() {
     });
   }
 
-  if (docScroll > heroSectionF) {
-    $('.inner-wrb-anim-box').addClass('iwrb-anim');
-    tl.to('.wrb-title, .wrb-txt, .wrb-btn', { y: '0%', duration: 1, delay: 3.2, stagger: 0.15 });
-  }
+  // if (docScroll > heroSectionF) {
+  //   $('.inner-wrb-anim-box').addClass('iwrb-anim');
+  // }
 
 }
 

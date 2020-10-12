@@ -79,27 +79,16 @@
 .wrb-title{
   @include typo(2em, $white, 600);
   // font-family: $neuro;
-  // margin-bottom: .5em;
+  margin-bottom: .5em;
   font-family: $lust;
 }
 
 .wrb-txt{
   @include typo(.9em, $white, 300);
+  margin-bottom: 2em;
 }
 
-.wrb-btn{
-  @include typo(1em, $white, 300);
-  // padding: .5em 2em;
-  // border: 1px solid $white;
-  font-family: $neuro;
-  margin-top: 1em;
-  transition: background .3s ease-in-out;
-  transition: color .3s ease-in-out;
-  &:hover{
-    color: $white;
-    cursor: pointer;
-  }
-}
+
 
 //portfolio-section
 .p1-title{

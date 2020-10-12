@@ -9,6 +9,7 @@
   position: fixed;
   top: 0; left: 0;
   z-index: 500;
+  background: #17191b9e;
   transition: background .3s ease-in-out;
   @include responsive(phone){
     padding: 1em;

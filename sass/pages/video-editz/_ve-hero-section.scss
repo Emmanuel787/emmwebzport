@@ -1,0 +1,38 @@
+//hero-section
+.ve-hero-section{
+  background: url(/resources/img/projectz/p2.jpg) no-repeat center center;
+  background-size: cover;
+  align-items: center;
+  position: relative;
+  margin-left: 5%;
+  margin-top: 5em;
+  min-height: 36em;
+  display: flex;
+  width: 0%;
+}
+
+.vehs-anim{
+    animation: ve-go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      -moz-animation: ve-go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        -webkit-animation: ve-go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+          -o-animation: ve-go-left 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1s;
+
+    @keyframes ve-go-left {
+      0% {
+        left: 0;
+        width: 0%;
+      }
+      50% {
+        left: 0;
+        width: 90%;
+        margin-left: 8%;
+      }
+      100% {
+        left: 0;
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+  }
+
