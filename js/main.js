@@ -11,12 +11,6 @@ $(window).scrollTop(0);
 //   });
 // });
 
-//startup loader:start
-// $(window).on('load', function () {
-
-// });
-//startup loader:end
-
 ////////////////////////////////////////////////@2020
 
 // reveal on scroll:start
@@ -86,20 +80,6 @@ if (document.querySelector("[data-easing]")) {
     easing: "easeOutQuint",
   });
 }
-
-/*
-one page smooth scroll easing:start
-*/
-
-////////////////////////////////////////////////@2020
-
-/*
-if inside div do this:start
-*/
-
-/*
-if inside div do this:end
-*/
 
 ////////////////////////////////////////////////@2020
 
@@ -175,7 +155,6 @@ if !E=doThisHere():end
 */
 
 ////////////////////////////////////////////////@2020
-
 
 $(".emh-mobile-menu-btn").on("click", function () {
   $("body").addClass("mobile-menu-body-anim");

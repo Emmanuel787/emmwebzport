@@ -1,10 +1,9 @@
 $(document).ready(function () {
   function bgChanger() {
-
     var docScrollBg = $(document).scrollTop(),
 
-      //about.html
-      sectionUno = $(".section-uno").offset().top - 300;
+    //about.html
+    sectionUno = $(".section-uno").offset().top - 300;
     sectionDos = $(".section-dos").offset().top - 300;
     sectionTres = $(".section-tres").offset().top - 300;
     //when rich top of boxex than fire
@@ -29,6 +28,5 @@ $(document).ready(function () {
     }
   }
   window.addEventListener("scroll", bgChanger);
-
 });
 

@@ -36,7 +36,6 @@ $(document).ready(function () {
   $(function () {
     barba.init({
       sync: false,
-
       transitions: [
         {
           //Before the transition, this goes
@@ -47,18 +46,13 @@ $(document).ready(function () {
             await delay(1000);
             done();
 
-            //divide////////////////////////////////////////////////////////////////////
-
             $(window).scrollTop(0);
-
 
           },
 
           //after the transition this will re-init...//
           async enter(data) {
             contentAnimation();
-
-            //divide////////////////////////////////////////////////////////////////////
 
             $(window).scrollTop(0);
 
@@ -84,7 +78,6 @@ $(document).ready(function () {
             //divide////////////////////////////////////////////////////////////////////
 
             $('.svg-dark').delay(500).fadeOut();
-
 
             //divide////////////////////////////////////////////////////////////////////
 
@@ -122,9 +115,7 @@ $(document).ready(function () {
             //divide////////////////////////////////////////////////////////////////////
 
             function bgChanger() {
-
               var docScrollBg = $(document).scrollTop(),
-
               //about.html
               sectionUno = $(".section-uno").offset().top - 300;
               sectionDos = $(".section-dos").offset().top - 300;
@@ -154,7 +145,7 @@ $(document).ready(function () {
 
             //divide////////////////////////////////////////////////////////////////////
 
-              function onScrollAnim() {
+            function onScrollAnim() {
 
               var docScroll = $(document).scrollTop(),
 
@@ -165,7 +156,7 @@ $(document).ready(function () {
 
               if (docScroll > heroSection) {
                 $('.el-main-header').css({
-                  "background":"#1d1f23d6"
+                  "background":"#17191b36"
                 });
               } else{
                 $('.el-main-header').css({
@@ -175,24 +166,18 @@ $(document).ready(function () {
 
               if (docScroll > heroSection) {
                 $('.el-main-header').css({
-                  "background":"#1d1f23d6"
+                  "background":"#17191b36"
                 });
               } else{
                 $('.el-main-header').css({
                   "background": ""
                 });
               }
-
-              if (docScroll > heroSectionF) {
-                // $('.wwas-left-box').addClass('wwas-anim');
-                $('.inner-wrb-anim-box').addClass('iwrb-anim');
-                tl.to('.wrb-title, .wrb-txt, .wrb-btn', { y: '0%', duration: 1, delay: 3.2, stagger: 0.15 });
-              }
-
             }
 
             window.addEventListener("scroll", onScrollAnim);
 
+            //divide////////////////////////////////////////////////////////////////////
 
             tl.to('.dsb-txt-appear', { y: '0%', duration: 0.7, delay: 3, stagger: 0.10 }, "-=1");
 

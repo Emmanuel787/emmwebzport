@@ -1,23 +1,14 @@
 //hero-section
 .a-hero-section{
-  background: url(/resources/img/hero/about.jpg) no-repeat center center;
+  background: url(/resources/img/projectz/p1.jpg) no-repeat center center;
   background-size: cover;
   align-items: center;
   position: relative;
-  background-position-y: .5em;
   margin-left: 5%;
   margin-top: 5em;
   min-height: 36em;
   display: flex;
   width: 0%;
-  @include responsive(tab-land){
-    background-position-y: 0;
-  }
-  @include responsive(phone){
-    background: url(/resources/img/hero/about-mb.jpg) no-repeat center center;
-    background-size: cover;
-    height: 40em;
-  }
 }
 
 .ahs-anim{
